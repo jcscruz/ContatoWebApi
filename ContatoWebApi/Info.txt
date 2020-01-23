@@ -1,0 +1,3 @@
+WebApi para gestão de contatos.
+
+Desenvolvido em .Net Core 2.2
