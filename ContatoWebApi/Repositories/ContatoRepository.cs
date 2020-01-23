@@ -19,8 +19,6 @@ namespace ContatoWebApi.Repositories
         {
             List<Contato> dadosRetorno = new List<Contato>(_Dados);
 
-            //return _Dados;
-
             if(dadosRetorno.Count() == 0)
             {
                 return null;
@@ -84,6 +82,7 @@ namespace ContatoWebApi.Repositories
         public void Alterar(Contato contato)
         {
             var contatoEditar =_Dados.FindIndex(0, 1, x => x.Id == contato.Id);
+            
             _Dados[contatoEditar] = contato;
         }
 
