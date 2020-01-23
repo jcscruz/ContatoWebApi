@@ -15,9 +15,60 @@ namespace ContatoWebApi.Repositories
             _Dados = new List<Contato>();
         }
 
-        public IEnumerable<Contato> Listar()
+        public IEnumerable<Contato> Listar(int size, int page)
         {
-            return _Dados;
+            List<Contato> dadosRetorno = new List<Contato>(_Dados);
+
+            //return _Dados;
+
+            if(dadosRetorno.Count() == 0)
+            {
+                return null;
+            }
+
+            Contatos ContatosAdicionar = new Contatos();
+
+            int registrosPorPagina = size == 0 ? registrosPorPagina = 10: registrosPorPagina = size;
+
+            int pagina = page == 0 ? pagina = 0 : pagina = page;
+
+            List<Contatos> PaginasContato = new List<Contatos>();
+
+            int totalContatos = dadosRetorno.Count();
+
+            for(int i = 0; i<=totalContatos; i++)
+            {
+                Console.WriteLine(i.ToString());
+
+                if(dadosRetorno.Count == 0)
+                    break;
+
+                ContatosAdicionar.ListaContatos.Add(dadosRetorno[0]);
+
+                dadosRetorno.Remove(dadosRetorno[0]);
+                
+                if(ContatosAdicionar.ListaContatos.Count() == registrosPorPagina && i == (registrosPorPagina -1))
+                {                    
+                    PaginasContato.Add(new Contatos{ ListaContatos = ContatosAdicionar.ListaContatos});
+                    ContatosAdicionar.ListaContatos = new List<Contato>();
+                    i=-1;
+                }
+
+            }
+            
+            ContatosAdicionar.ListaContatos.AddRange(dadosRetorno);
+            
+            if(ContatosAdicionar.ListaContatos.Count() > 0)
+            {                
+                PaginasContato.Add(ContatosAdicionar);             
+            }
+
+            if((pagina + 1) > PaginasContato.Count())
+            {
+                return null;
+            }
+
+            return PaginasContato[pagina].ListaContatos;
         }
 
         public Contato ObterPorId(Guid id)
