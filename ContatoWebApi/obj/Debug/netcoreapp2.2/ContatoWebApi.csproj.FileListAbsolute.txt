@@ -1,0 +1,14 @@
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.csprojAssemblyReference.cache
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.csproj.CoreCompileInputs.cache
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.RazorAssemblyInfo.cache
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.RazorAssemblyInfo.cs
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.AssemblyInfoInputs.cache
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.AssemblyInfo.cs
+C:\Users\julio\GestaoContato\ContatoWebApi\bin\Debug\netcoreapp2.2\ContatoWebApi.deps.json
+C:\Users\julio\GestaoContato\ContatoWebApi\bin\Debug\netcoreapp2.2\ContatoWebApi.runtimeconfig.json
+C:\Users\julio\GestaoContato\ContatoWebApi\bin\Debug\netcoreapp2.2\ContatoWebApi.runtimeconfig.dev.json
+C:\Users\julio\GestaoContato\ContatoWebApi\bin\Debug\netcoreapp2.2\ContatoWebApi.dll
+C:\Users\julio\GestaoContato\ContatoWebApi\bin\Debug\netcoreapp2.2\ContatoWebApi.pdb
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.dll
+C:\Users\julio\GestaoContato\ContatoWebApi\obj\Debug\netcoreapp2.2\ContatoWebApi.pdb
