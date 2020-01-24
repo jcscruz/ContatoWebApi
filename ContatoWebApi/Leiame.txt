@@ -1,0 +1,29 @@
+#################################################################
+                 WebApi para gestão de contatos
+#################################################################
+
+
+Desenvolvido em .Net Core 2.2
+
+Autor: Júlio Cruz
+E-mail: julio100@gmail.com
+
+************************************************************
+Afim de que o avaliador possa fazer os testes dos endpoints, 
+esta WebApi desenvolvida para fazer mock de dados em memória.
+************************************************************
+
+Acesso
+https://[servidor]:[porta]/v1/contato
+
+JSON para cadastro
+{
+	"Nome" : "Julio Cruz",
+	"Canal" : "Email",
+	"Valor" : "julio100@gmail.com",
+	"Obs" : "Analista .NET"
+}
+
+#################################################################
+                 WebApi para gestão de contatos
+#################################################################

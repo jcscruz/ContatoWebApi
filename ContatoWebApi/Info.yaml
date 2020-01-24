@@ -1,19 +1,10 @@
-#################################################################
-INICIO COMENTÁRIOS
-#################################################################
 
-WebApi para gestão de contatos.
-
-Desenvolvido em .Net Core 2.2
-
-Autor: Júlio Cruz
-E-mail: julio100@gmail.com
 
 Criar API para gerenciar contatos.
 
 Entidade identificada: Contato
 
-Campos Obrigatórios: Nome, canal, valor e obs.
+Campos Obrigatórios: Nome, canal, valor.
 
 Endpoints identificados: Listar, listar por id, incluir, alterar e excluir.
 
@@ -21,11 +12,7 @@ Endpoint listar:  Deverá trazer a lista de contatos paginadas de acordo com os 
                   Se os parâmetros não forem informados, o endpoint deverá considerar "page=0" e "size=10";
                   O "size" é a quantidade de contato retornadas por página.
                   O "page" é a pagina solicitada pelo aplicação consumidora.
-
-#################################################################
-FIM COMENTÁRIOS
-#################################################################
-
+                  
 ---
 openapi: 3.0.0
 info:
